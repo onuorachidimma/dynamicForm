@@ -1,0 +1,99 @@
+.formContainer {
+  border-radius: 4px;
+  padding: 100px;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.header {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 2rem;
+}
+
+input {
+  display: block;
+  padding: 1rem;
+  font-size: 16px;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.inputAndErrorContainer {
+  margin-bottom: 2rem;
+}
+
+.submitButton {
+  width: 100%;
+  background-color: green;
+}
+
+.submitButton button {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1rem;
+  font-size: 16px;
+
+  background-color: inherit;
+}
+
+/* ########### Modal ################ */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.closeModal {
+  background-color: blue;
+  color: white;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+/* ########### Responsive Styling ################ */
+@media screen and (max-width: 1073px) {
+  .formContainer {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .formContainer {
+    padding: 0;
+  }
+  .modal-content {
+    max-width: 80%;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 418px) {
+  .header {
+    font-size: 28px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+}
